@@ -7,11 +7,17 @@
   "boot": "auto",
   "init": false,
   "audio": true,
-  "options": { 
+  "options": {
     "snapclientopts": "-h snapcastserver"
   },
   "schema": {
     "snapclientopts": "str"
-   },
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"]
-  }
+  },
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ]
+}
