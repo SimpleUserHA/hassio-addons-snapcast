@@ -16,7 +16,6 @@ RUN \
     pulseaudio \
     \
     && cargo install \
-    --locked \
     --no-default-features \
     --features pulseaudio-backend \
     --root /usr \
