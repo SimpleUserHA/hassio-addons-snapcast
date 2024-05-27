@@ -51,6 +51,6 @@ schema:
   spotify_password: password?
   snapclientopts: str
   log_level: list(trace|debug|info|notice|warning|error|fatal)
-image: "ghcr.io/SimpleUserHA/{arch}-snapcast-server"
+#image: "ghcr.io/SimpleUserHA/{arch}-snapcast-server"
 #  "startup": "services",
 #  "boot": "auto",
