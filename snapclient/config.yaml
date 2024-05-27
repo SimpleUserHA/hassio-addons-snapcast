@@ -3,54 +3,29 @@ name: snapcast-client
 version: beta
 slug: snapcastclient
 description: Snapcast client
-url: "https://github.com/SimpleUserHA/hassio-addons-snapcast/tree/master/snapclient"
-audio: true
-host_network: true
-ingress: true
-ingress_port: 1780
-panel_icon: "mdi:cast-audio"
-privileged:
-  - SYS_ADMIN
-init: false
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
+url: "https://github.com/SimpleUserHA/hassio-addons-snapcast/tree/master/snapclient"
+startup: services
+boot: auto
+audio: true
+#somewhereelse
+host_network: true
+panel_icon: "mdi:cast-audio"
+privileged:
+  - SYS_ADMIN
+init: false
+#end somewhere else
+
 #map:
 #  - share:rw
-#ports:
-#  1704/tcp: 1704
-#  1705/tcp: 1705
-#  1780/tcp: 1780
-#ports_description:
-#  1704/tcp: Snapcast client connections
-#  1705/tcp: Snapcast's control interface
-#  1780/tcp: Snapcast websocket connections and web-interface
 options:
-#  streams:
-#    streams: []
-#  buffer: 1000
-#  codec: flac
-#  send_to_muted: false
-#  sampleformat: "48000:16:2"
-#  spotify_name: "Home Assistant Sound System"
   log_level: info
   snapclientopts: "-h snapcastserver"
-#schema:
-  # Use nested option to force yaml editor on addon's config page
-#  streams:
-#    streams: ["str"]
-#  buffer: int
-#  codec: list(pcm|flac|vorbis|opus)
-#  send_to_muted: bool
-#  sampleformat: str
-#  spotify_name: str
-#  spotify_username: str?
-#  spotify_password: password?
-#  snapclientopts: str
-#  log_level: list(trace|debug|info|notice|warning|error|fatal)
-#image: "ghcr.io/SimpleUserHA/{arch}-snapcast-server"
-#  "startup": "services",
-#  "boot": "auto",
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  snapclientopts: str
