@@ -23,4 +23,4 @@ schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   snapclientopts: str
   parecip: "str?"
-  parecport: port
+  parecport: "port?"
