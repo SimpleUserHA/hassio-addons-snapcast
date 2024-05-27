@@ -10,3 +10,5 @@ bashio::log.info "Version..."
 
 bashio::log.info "Start Snapclient..."
 /usr/bin/snapclient ${SNAPCLIENT_OPTS}
+
+arecord -l
