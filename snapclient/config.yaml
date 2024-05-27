@@ -17,6 +17,10 @@ init: false
 options:
   log_level: info
   snapclientopts: "-h snapcastserver"
+  parecip: null
+  parecport: null
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   snapclientopts: str
+  parecip: "str?"
+  parecport: port
