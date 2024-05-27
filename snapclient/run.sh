@@ -1,8 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bashio
 
-CONFIG_PATH=/data/options.json
+SNAPCLIENT_OPTS=$(bashio::config 'snapclientopts')
 
-SNAPCLIENT_OPTS=$(jq --raw-output ".snapclientopts" $CONFIG_PATH)
+bashio::log.info "Read Snapclient settings..."
+bashio::log.info "snapclientopts = ${SNAPCLIENT_OPTS}"
 
-echo "Start Snapclient..."
+bashio::log.info "Version..."
+/usr/bin/snapclient -v
+
+bashio::log.info "Start Snapclient..."
 /usr/bin/snapclient ${SNAPCLIENT_OPTS}
