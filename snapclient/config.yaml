@@ -3,7 +3,7 @@ name: snapcast-client
 version: beta
 slug: snapcastclient
 description: Snapcast client
-url: "https://github.com/corneyl/hassio-addons/tree/main/snapcast-server"
+url: "https://github.com/SimpleUserHA/hassio-addons-snapcast/tree/master/snapclient"
 audio: true
 host_network: true
 ingress: true
