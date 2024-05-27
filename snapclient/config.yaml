@@ -13,16 +13,6 @@ url: "https://github.com/SimpleUserHA/hassio-addons-snapcast/tree/master/snapcli
 startup: services
 boot: auto
 audio: true
-#somewhereelse
-host_network: true
-panel_icon: "mdi:cast-audio"
-privileged:
-  - SYS_ADMIN
-init: false
-#end somewhere else
-
-#map:
-#  - share:rw
 options:
   log_level: info
   snapclientopts: "-h snapcastserver"
