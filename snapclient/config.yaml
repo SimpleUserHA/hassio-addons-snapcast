@@ -13,6 +13,7 @@ url: "https://github.com/SimpleUserHA/hassio-addons-snapcast/tree/master/snapcli
 startup: services
 boot: auto
 audio: true
+init: false
 options:
   log_level: info
   snapclientopts: "-h snapcastserver"
