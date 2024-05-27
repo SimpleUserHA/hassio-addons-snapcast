@@ -1,5 +1,9 @@
 #!/usr/bin/env bashio
 
+USERNAME=$(bashio::config 'username')
+
+bashio::log.info "${USERNAME}"
+
 SNAPCLIENT_OPTS=$(bashio::config 'snapclientopts')
 
 bashio::log.info "Read Snapclient settings..."
