@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: snapcast-client
-version: 0.1.4
+version: 0.1.5
 slug: snapcastclient
 description: Snapcast client
 arch:
@@ -17,10 +17,10 @@ init: false
 options:
   log_level: info
   snapclientopts: "-h snapcastserver"
-  parecip: null
-  parecport: null
+#  parecip: null
+#  parecport: null
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   snapclientopts: str
-  parecip: "str?"
-  parecport: "port?"
+#  parecip: "str?"
+#  parecport: "port?"
