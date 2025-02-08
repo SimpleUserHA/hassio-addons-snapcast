@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: snapcast-client
-version: 0.1.5
+version: 0.1.6
 slug: snapcastclient
 description: Snapcast client
 arch:
